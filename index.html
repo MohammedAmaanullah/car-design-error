@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        <script src="car.js"></script>
+        <script src="base.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-camera position="0 0 5"></a-camera>
+            <a-assets>
+                <a-asset-item id="car-obj" src="./3D models for web vr 5/tinker.obj"></a-asset-item>
+                <a-asset-item id="car-mtl" src="./3D models for web vr 5/obj.mtl"></a-asset-item>
+                <a-asset-item id="car-gltf" src="./3D models for web vr 5/Copy of Car (my first model _D).glb"></a-asset-item>
+            </a-assets>
+            <a-entity position="0 0 0" rotation="0 0 0" car>
+                <a-entity  obj-model="obj:#car-obj, mtl:#car-mtl" position="0 0 0" rotation="0 0 0"></a-entity>
+            </a-entity>
+            <a-entity position="0 0 0" rotation="0 0 0" base>
+            
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
